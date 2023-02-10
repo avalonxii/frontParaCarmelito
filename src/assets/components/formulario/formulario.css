@@ -1,0 +1,33 @@
+.formulario {
+    width: 100%;
+    height: 80vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.formulario h3{
+    color: var(--color-dark);
+}
+
+.formulario .form {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+}
+
+.formulario .enviar{
+    width: 90%;
+    font-weight: 400;
+}
+
