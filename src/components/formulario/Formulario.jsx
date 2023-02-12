@@ -14,6 +14,7 @@ import { datos } from '../../data/api'
 import { useNavigate } from 'react-router-dom'
 import Politicas from './Politicas'
 import Menu from '../menu/Menu'
+import { db } from '../../service/firebase'
 
 export default function Formulario() {
     //navigate
@@ -37,9 +38,10 @@ export default function Formulario() {
             email: inputEmail,
             dudas: inputDudas,
         })
-        
-        console.log(datos)
-        /* navigate('/despedida') */
+
+        /* const guardar = () => addDoc(collection(db, 'collection-name'), datos) */
+
+        navigate('/despedida')
     }
 
     //comprobar si el checkBox esta acpetado o no
