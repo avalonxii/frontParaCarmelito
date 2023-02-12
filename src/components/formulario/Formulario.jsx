@@ -170,7 +170,7 @@ export default function Formulario() {
             >
                 <Modal.Header>
                     <Text id="modal-title" size={18}>
-                        Modal with a lot of content
+                        Politicas de Privacidad
                     </Text>
                 </Modal.Header>
                 <Modal.Body>
