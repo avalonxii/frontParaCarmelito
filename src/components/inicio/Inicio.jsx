@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsFillArrowDownCircleFill } from 'react-icons/bs'
-import { motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import './inicio.css'
 
 export default function Inicio() {
@@ -17,7 +18,11 @@ export default function Inicio() {
 
     const item = {
         hidden: { opacity: 0, y: -100 },
-        show: { opacity: 1, y: 0, transition: { duration: 1, type: 'spring'  ,bounce: 0.5 } },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, type: 'spring', bounce: 0.5 },
+        },
     }
 
     return (
@@ -34,7 +39,9 @@ export default function Inicio() {
                     <span>Scroll down</span>
 
                     <motion.span className="icon">
-                        <BsFillArrowDownCircleFill />
+                        <a href="#menu">
+                            <BsFillArrowDownCircleFill />
+                        </a>
                     </motion.span>
                 </motion.div>
             </div>

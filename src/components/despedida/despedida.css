@@ -51,4 +51,6 @@
     padding: 1rem 3rem;
     border: 3px solid var(--color-dark);
     border-radius: 1rem;
+
+    cursor: pointer;
 }
