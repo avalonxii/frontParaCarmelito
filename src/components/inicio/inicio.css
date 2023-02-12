@@ -1,0 +1,82 @@
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-dark);
+}
+
+.inicio .mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio .bienvenido {
+    width: 100%;
+    position: relative;
+    line-height: 0.9em;
+    font-size: 17vw;
+}
+
+.inicio .frase {
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    font-size: 1.8rem;
+    width: 10ch;
+
+    animation: typing 2s steps(9), blink 0.5s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.inicio .flecha-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 30vh;
+
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inicio .flecha-down .icon {
+    font-size: 5rem;
+    animation: rebotar 0.6s infinite alternate ease-in-out;
+    cursor: pointer;
+
+}
+
+@keyframes rebotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
