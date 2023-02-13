@@ -29,5 +29,5 @@ async function getCities(db) {
 }
 
 
-/* //set data
-export const guardar = await addDoc(collection(db, 'cities'), datos) */
+//set data
+export const guardar = async(datos) => addDoc(collection(db, 'usuarios'), datos)

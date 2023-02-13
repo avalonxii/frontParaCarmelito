@@ -29,9 +29,9 @@
     white-space: nowrap;
     border-right: 2px solid;
     font-size: 1.8rem;
-    width: 10ch;
+    width: 25ch;
 
-    animation: typing 2s steps(9), blink 0.5s infinite alternate;
+    animation: typing 2.5s steps(25), blink 0.5s infinite alternate;
     overflow: hidden;
 }
 
@@ -88,5 +88,9 @@
 @media only screen and (max-width: 550px){
     .inicio .flecha-down .icon{
         font-size: 3.3rem;
+    }
+
+    .inicio .frase{
+        font-size: 1.4rem;
     }
  }

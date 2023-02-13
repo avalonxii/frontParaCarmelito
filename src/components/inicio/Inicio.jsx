@@ -1,7 +1,6 @@
 import React from 'react'
 import { BsFillArrowDownCircleFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import './inicio.css'
 
 export default function Inicio() {
@@ -34,7 +33,7 @@ export default function Inicio() {
         >
             <div className="mensaje">
                 <span className="bienvenido">Bienvenid@</span>
-                <span className="frase">Campus FP</span>
+                <span className="frase">Campus FP, atrévete con la FP</span>
                 <motion.div variants={item} className="flecha-down">
                     <span>Scroll down</span>
 
