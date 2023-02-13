@@ -1,21 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
 
 :root{
-    --color-red: #ff4a47;
+    --color-violet: #cb3af3;
+    --color-purple: #8a34e6;
     --color-blue: #1a82f9;
     --color-dark: #1e1e1e;
-    --color-white: rgb(240, 235, 235);
+    --color-white: rgb(250, 250, 250);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: var(--color-white);
+
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-html{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .contenedor{
+    width: 100%;
     padding-left: 8%;
     padding-right: 8%;
 }
+
+

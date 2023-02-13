@@ -1,0 +1,56 @@
+.despedida {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.despedida .mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.despedida .adios {
+    width: 100%;
+    position: relative;
+    line-height: 0.9em;
+    font-size: 8vw;
+}
+
+.despedida .frase{
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 20ch;
+
+    animation: typing 3s steps(20), blink .5s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50%{ border-color: transparent;}
+}
+
+
+
+
+.despedida  .exit{
+    position: absolute;
+    left: auto;
+    bottom: 15%;
+
+    padding: 1rem 3rem;
+    border: 3px solid var(--color-dark);
+    border-radius: 1rem;
+
+    cursor: pointer;
+}

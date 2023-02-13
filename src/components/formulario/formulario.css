@@ -1,7 +1,11 @@
+.cuerpo {
+    height: 100vh;
+    margin-top: 300px;
+}
+
 .formulario {
     width: 100%;
     height: 80vh;
-
 
     display: flex;
     flex-direction: column;
@@ -11,12 +15,16 @@
     font-size: 24px;
 }
 
-.formulario h3{
+.formulario h3 {
     color: var(--color-dark);
 }
 
 .formulario .form {
+    backdrop-filter: blur(10px);
+
     width: 50%;
+    padding: 1rem;
+    border-radius: 1.5rem;
 
     display: flex;
     flex-direction: column;
@@ -26,8 +34,50 @@
     gap: 3rem;
 }
 
-.formulario .enviar{
-    width: 90%;
-    font-weight: 400;
+.formulario .form .input{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
+.formulario .form .checkbox{
+    width: 90%;
+    font-size: 1.6rem;
+
+    display: flex;
+    gap: 10px;
+}
+
+.formulario .form .button {
+    width: 90%;
+    animation: none;
+}
+
+.formulario .form .button:hover {
+    animation: colors 2s infinite alternate;
+}
+
+@keyframes colors {
+    0% {
+        box-shadow: 0px 0px 10px 5px var(--color-violet);
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px 5px var(--color-blue);
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 5px var(--color-purple);
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .formulario .form{
+        width: 90%;
+    }
+
+    .formulario .form .checkbox span{
+        font-size: 1rem;
+    }
+  }

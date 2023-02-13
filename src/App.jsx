@@ -1,14 +1,15 @@
-import Formulario from "./assets/components/formulario/Formulario"
-import Menu from "./assets/components/menu/Menu"
+import Formulario from './components/formulario/Formulario'
+import Inicio from './components/inicio/Inicio'
+import Despedida from './components/despedida/Despedida'
 
 function App() {
 
-  return (
-    <div className="App">
-      <Menu/>
-      <Formulario/>
-    </div>
-  )
+    return (
+        <div className="App">
+            <Inicio />
+            <Formulario />
+        </div>
+    )
 }
 
 export default App
