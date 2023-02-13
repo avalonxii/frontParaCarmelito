@@ -49,6 +49,12 @@
     gap: 10px;
 }
 
+.formulario .form .checkbox .politicas{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
 .formulario .form .button {
     width: 90%;
     animation: none;

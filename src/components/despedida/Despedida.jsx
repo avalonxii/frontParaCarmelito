@@ -7,7 +7,7 @@ export default function Inicio() {
     return (
         <div className="despedida">
             <div className="mensaje">
-                <span className="adios">Gracias, <span className='frase'>Nos Vemos Pronto OwO</span></span>
+                <span className="adios">Gracias, <span className='frase'>Nos Vemos Pronto</span></span>
 
                 <span className='exit' onClick={() => navigate('/')}>Volver</span>
             </div>

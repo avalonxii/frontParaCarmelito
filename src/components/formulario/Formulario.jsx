@@ -107,7 +107,7 @@ export default function Formulario() {
           className="form"
           transition={{ staggerChildren: 1 }}
         >
-          <h3>A Nosotros nos Importas</h3>
+          <h3>Solicitar información</h3>
 
           <motion.div className="input" animate={inputAnimation}>
             <Input
@@ -159,9 +159,10 @@ export default function Formulario() {
               color="success"
               onChange={() => setIsChecked(!isChecked)}
               aria-label="Checkbox"
+              size="xl"
             />
 
-            <span onClick={() => setVisible(true)}>
+            <span onClick={() => setVisible(true)} className="politicas">
               Acepto las políticas de privacidad
             </span>
           </motion.div>

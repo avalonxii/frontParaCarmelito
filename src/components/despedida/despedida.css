@@ -26,9 +26,9 @@
     display: block;
     white-space: nowrap;
     border-right: 2px solid;
-    width: 20ch;
+    width: 15ch;
 
-    animation: typing 3s steps(20), blink .5s infinite alternate;
+    animation: typing 3s steps(15), blink .5s infinite alternate;
     overflow: hidden;
 }
 

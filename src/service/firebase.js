@@ -2,9 +2,7 @@ import { initializeApp } from 'firebase/app'
 import {
     collection,
     getFirestore,
-    getDocs,
     addDoc,
-    doc,
 } from 'firebase/firestore/lite'
 
 //conection
@@ -19,15 +17,6 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig)
 export const db = getFirestore(app)
-
-//get data
-async function getCities(db) {
-    const citiesCol = collection(db, 'cities')
-    const citySnapshot = await getDocs(citiesCol)
-    const cityList = citySnapshot.docs.map((doc) => doc.data())
-    return cityList
-}
-
 
 //set data
 export const guardar = async(datos) => addDoc(collection(db, 'usuarios'), datos)

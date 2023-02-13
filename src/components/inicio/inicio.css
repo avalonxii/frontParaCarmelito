@@ -21,7 +21,8 @@
     width: 100%;
     position: relative;
     line-height: 0.9em;
-    font-size: 17vw;
+    font-size: 8vw;
+
 }
 
 .inicio .frase {
@@ -29,9 +30,9 @@
     white-space: nowrap;
     border-right: 2px solid;
     font-size: 1.8rem;
-    width: 25ch;
+    width: 30ch;
 
-    animation: typing 2.5s steps(25), blink 0.5s infinite alternate;
+    animation: typing 2.5s steps(30), blink 0.5s infinite alternate;
     overflow: hidden;
 }
 
@@ -61,7 +62,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .inicio .flecha-down .icon {
@@ -80,7 +80,7 @@
     }
 
     100% {
-        transform: translateY(15px);
+        transform: translateY(10px);
     }
 }
 
@@ -91,6 +91,10 @@
     }
 
     .inicio .frase{
-        font-size: 1.4rem;
+
+         font-size: 5vw; 
+
+
+
     }
  }
